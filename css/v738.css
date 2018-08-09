@@ -1,15 +1,25 @@
 /* vertical media querry god damn it */
+
 @media screen and (max-height:738px) {
-  .olist__controls,.docs__controls {
-    margin-bottom: 24px;
+ .docs__controls {
+      /***margin-bottom: 24px;***/
+    }
+  }
+/***/
+@media screen and (max-height:823px) and (max-width: 425px) {
+  .olist__controls {
+       bottom: 30px;
+    position: fixed;
+        padding: 0 15px;
+    width: auto !important;
   }
 
   .clients__controls, .partners__controls {
     margin: 32px auto 24px
   }
 
-  .docs__item {
-      margin-bottom: 32px;
+  .docss__item {
+     margin-bottom: 0px;/***/
   }
 
   h1.article-heading {
@@ -32,7 +42,8 @@
 
 article.page.page-object {
     padding-bottom: 48px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 footer.object__footer {
@@ -41,6 +52,7 @@ footer.object__footer {
 
 .container {
     top: 80px;
+    height: -webkit-calc(100% - 80px);
     height: calc(100% - 80px);
 }
 

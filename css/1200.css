@@ -33,8 +33,9 @@ a.fc {
     max-width: 432px;
 }
 
+/***/
 .docs__item-content {
-    max-width: 432px;
+  /*  max-width: 432px;*/
 }
 
 .docs__controls {
@@ -45,7 +46,7 @@ a.fc {
     max-width: 156px;
 }
 
-.contacts__col-left {flex: 0 0 34%;}
+.contacts__col-left {-webkit-box-flex: 0;-webkit-flex: 0 0 34%;-ms-flex: 0 0 34%;flex: 0 0 34%;}
 
 app-contacts {
     position: static;

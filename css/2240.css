@@ -16,9 +16,9 @@ header{
 }
 
 app-clients, app-contacts, app-docs, app-home, app-projects, app-property {
-max-height: 936px;
-position: absolute;
-bottom: 0;
+max-height: 936px;
+position: absolute;
+bottom: 0;
 }
 
 
@@ -28,7 +28,7 @@ app-clients, app-contacts, app-docs, app-home, app-projects, app-property {
 
 .hs-image-wrap {
     height: 100%;
-    width: auto;
+    width: 100%;
     max-width: 1454px;
     max-width: none;
 }
@@ -41,8 +41,14 @@ main {
     /* height: 1190px; */
     height: 100vh;
     /* height: auto; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: static;
 }
 
