@@ -442,6 +442,16 @@ section.companies.partners {
     width: 100%;
 }
 
+@media screen and (max-width: 900px) and (min-width: 426px) and (max-height: 414px)
+{
+    section.companies.partners {
+    position: static;
+}
+section.companies.clients {
+    position: static;
+    margin-bottom: 72px;
+}
+}
 .swiper-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -783,6 +793,7 @@ a.hs-link {
     border-bottom: 1px solid #1e1d1b;
     display: inline-block;
     margin-left: 32px;
+    /*width:160px;*/
     white-space: nowrap;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -791,6 +802,14 @@ a.hs-link {
     transition: all .3s ease;
   }
 
+
+@media screen and (min-width: 900px)
+{
+a.hs-link {
+    width: 160px;
+}
+
+}
 /*@media screen and (max-width: 1200px){  
  /*a.hs-link {
         order: 3;
@@ -856,9 +875,17 @@ a.hs-link:hover {
 
 @media screen and (max-width: 900px) and (min-width: 426px)
 {
-    .olist__controls.home {
-        position: fixed;
+    .olist__controls.home, .docs__controls  {
+        position: static;
         padding-bottom: 105px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 426px) and (max-height: 414px)
+{
+    .olist__controls.home, .olist__controls.project, .docs__controls  {
+        position: static;
+        padding-bottom: 55px;
     }
 }
 

@@ -14,6 +14,7 @@
     width: auto !important;
   }
 
+
   .clients__controls, .partners__controls {
     margin: 32px auto 24px
   }
@@ -54,6 +55,7 @@ footer.object__footer {
     top: 80px;
     height: -webkit-calc(100% - 80px);
     height: calc(100% - 80px);
+    min-height: 780px;
 }
 
 article.page.page-objects {
